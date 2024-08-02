@@ -4,28 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97482d30-9b72-4743-aef2-ab176bab065d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/account/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements. txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/task_matrix_api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/task_matrix_api.iml" afterDir="false" />
+    <list default="true" id="97482d30-9b72-4743-aef2-ab176bab065d" name="Changes" comment="created account app">
+      <change afterPath="$PROJECT_DIR$/account/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/migrations/0002_user_avatar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/migrations/0003_rename_avatar_user_avatar_url.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/migrations/0004_user_bio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task_matrix_api/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_matrix_api/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_matrix_api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_matrix_api/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2k5lp1yMiMcHJhcjkMbSnfF3qYf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -34,19 +42,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Django Server.task_matrix_api.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/media/images" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="task_matrix_api" type="Python.DjangoServer" factoryName="Django server">
       <module name="task_matrix_api" />
@@ -55,6 +69,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="task_matrix_api.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -89,8 +104,39 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722581498091</updated>
-      <workItem from="1722581510756" duration="1039000" />
+      <workItem from="1722581510756" duration="1217000" />
+      <workItem from="1722582757330" duration="12000" />
+      <workItem from="1722582795728" duration="20000" />
+      <workItem from="1722582839514" duration="27000" />
+      <workItem from="1722582898844" duration="192000" />
+      <workItem from="1722583183229" duration="580000" />
+      <workItem from="1722583973829" duration="19000" />
+      <workItem from="1722584102100" duration="1368000" />
+      <workItem from="1722586226805" duration="5000" />
+      <workItem from="1722586250660" duration="7000" />
+      <workItem from="1722586291695" duration="688000" />
+      <workItem from="1722587023127" duration="142000" />
+      <workItem from="1722587180880" duration="3002000" />
+      <workItem from="1722590240415" duration="3543000" />
+      <workItem from="1722597774148" duration="2109000" />
     </task>
+    <task id="LOCAL-00001" summary="added requirements.txt">
+      <option name="closed" value="true" />
+      <created>1722582625361</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722582625362</updated>
+    </task>
+    <task id="LOCAL-00002" summary="created account app">
+      <option name="closed" value="true" />
+      <created>1722582702330</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722582702330</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,5 +144,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="added requirements.txt" />
+    <MESSAGE value="created account app" />
+    <option name="LAST_COMMIT_MESSAGE" value="created account app" />
   </component>
 </project>
